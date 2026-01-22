@@ -1,0 +1,135 @@
+.todo__alert--success {
+    padding: 10px 30px;
+    border-color: #badbcc;
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.todo__alert--danger {
+    padding: 10px 30px;
+    border-color: #f5c2c7;
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.todo__alart--danger ul{
+    margin: 0;
+}
+
+.todo_container {
+    margin: 0 auto;
+    padding: 60px 15px;
+    max-width: 1230px;
+}
+
+.create_form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+
+}
+
+.create_form__item {
+    width: 70%;
+}
+
+.create_form__item-input {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create_form__button {
+    width: 20%;
+}
+
+.create_form__button-submit{
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #000;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    }
+
+.todo-table {
+    margin: 30px auto;
+    width: 70%;
+    text-align: left;
+}
+
+.todo-table__inner {
+    width: 100%;
+}
+
+.todo-table__row {
+    border-bottom: 1px solid #ccc;
+}
+
+.todo-table__header {
+    padding: 12px;
+    width: 20%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.todo-table__item:first-of-type {
+    padding: 12px;
+    width: 90%;
+}
+
+.update-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update-form__item {
+    width: 80%;
+    line-height: 50%;
+}
+
+.update-form__item-input {
+    width: 100%;
+    outline: none; /* フォーカス時の枠線を削除 */
+    border: none;
+}
+
+.create-form__item-input:focus {/*outline:none;を使用する時は:focusを使用する*/
+    border: 1px solid #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+.update-form__button{
+    width:50px;
+}
+
+.update-form__button-submit{
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: #0000ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.delete-form__button{
+    width:50px;
+}
+
+.delete-form__button-submit{
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: #ff0000;
+    color: #fff;
+    cursor: pointer;
+}

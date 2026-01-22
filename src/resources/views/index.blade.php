@@ -17,7 +17,7 @@
                 <input class="create_form__item-input" type="text" name="content" />
             </div>
             <div class="create_form__button">
-            <button type="submit">作成</button>
+            <button class="create_form__button-submit" type="submit">作成</button>
             </div>
         </form>
 
