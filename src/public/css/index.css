@@ -12,13 +12,13 @@
     color: #842029;
 }
 
-.todo__alart--danger ul{
+.todo__alert--danger ul{
     margin: 0;
 }
 
 .todo_container {
     margin: 0 auto;
-    padding: 60px 15px;
+    padding: 60px 15px;/*スマホなどの小さい画面で見る際に余白を作る、レスポンシブデザインのため*/
     max-width: 1230px;
 }
 
