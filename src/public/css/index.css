@@ -16,13 +16,13 @@
     margin: 0;
 }
 
-.todo_container {
+.todo_container {/*めっちゃ親要素*/
     margin: 0 auto;
     padding: 60px 15px;/*スマホなどの小さい画面で見る際に余白を作る、レスポンシブデザインのため*/
     max-width: 1230px;
 }
 
-.create_form {
+.create_form {/*親要素*/
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -31,11 +31,11 @@
 
 }
 
-.create_form__item {
+.create_form__item {/*子要素*/
     width: 70%;
-}
+}   
 
-.create_form__item-input {
+.create_form__item-input {/*孫要素*/
     width: 100%;
     padding: 10px;
     height: 40px;
@@ -43,11 +43,11 @@
     border-radius: 5px;
 }
 
-.create_form__button {
+.create_form__button {/*孫要素*/
     width: 20%;
 }
 
-.create_form__button-submit{
+.create_form__button-submit{/*孫要素*/
     padding: 10px;
     width: 100%;
     height: 40px;
@@ -58,59 +58,55 @@
     cursor: pointer;
     }
 
-.todo-table {
+.todo-table {/*親要素*/
     margin: 30px auto;
     width: 70%;
     text-align: left;
 }
 
-.todo-table__inner {
+.todo-table__inner {/*子要素*/
     width: 100%;
 }
 
-.todo-table__row {
+.todo-table__row {/*孫要素*/
     border-bottom: 1px solid #ccc;
 }
 
-.todo-table__header {
+.todo-table__header {/*孫要素*/
     padding: 12px;
     width: 20%;
     text-align: left;
     font-weight: bold;
 }
 
-.todo-table__item:first-of-type {
+.todo-table__item:first-of-type {/*孫要素*/
     padding: 12px;
     width: 90%;
 }
 
-.update-form{
+.update-form{/*親要素*/
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.update-form__item {
+.update-form__item {/*子要素*/
     width: 80%;
     line-height: 50%;
 }
 
-.update-form__item-input {
+.update-form__item-input {/*子要素*/
     width: 100%;
     outline: none; /* フォーカス時の枠線を削除 */
     border: none;
 }
 
-.create-form__item-input:focus {/*outline:none;を使用する時は:focusを使用する*/
-    border: 1px solid #007bff;
-    box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
-}
 
-.update-form__button{
+.update-form__button{/*子要素*/         
     width:50px;
 }
 
-.update-form__button-submit{
+.update-form__button-submit{/*子要素*/
     padding: 5px;
     width: 100%;
     border: none;
@@ -120,11 +116,11 @@
     cursor: pointer;
 }
 
-.delete-form__button{
+.delete-form__button{/*子要素*/
     width:50px;
 }
 
-.delete-form__button-submit{
+.delete-form__button-submit{/*子要素*/                          
     padding: 5px;
     width: 100%;
     border: none;
