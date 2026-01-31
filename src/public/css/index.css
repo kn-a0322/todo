@@ -18,36 +18,58 @@
 
 .todo_container {/*めっちゃ親要素*/
     margin: 0 auto;
-    padding: 60px 15px;/*スマホなどの小さい画面で見る際に余白を作る、レスポンシブデザインのため*/
+    padding: 30px 15px;/*スマホなどの小さい画面で見る際に余白を作る、レスポンシブデザインのため*/
     max-width: 1230px;
 }
 
-.create_form {/*親要素*/
+.section__title {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.section__title h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.create_form, .search-form {/*親要素*/
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    margin-bottom: 15px;
     width: 70%;
     text-align: center;
 
 }
 
-.create_form__item {/*子要素*/
+.create_form__item, .search-form__item {
+    display: flex;/*子要素*/
     width: 70%;
 }   
 
-.create_form__item-input {/*孫要素*/
-    width: 100%;
+.create_form__item-input, .search-form__item-input {/*
+    margin-right: 10px;孫要素*/
+    width: 70%;
     padding: 10px;
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.create_form__button {/*孫要素*/
+.create-form__item-select, .search-form__item-select {
+    padding: 10px;
+    width: 30%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;/*appearanceはブラウザのデフォルトのスタイルを解除する*/
+}
+
+.create_form__button, .search-form__button {/*孫要素*/
     width: 20%;
 }
 
-.create_form__button-submit{/*孫要素*/
+.create_form__button-submit, .search-form__button-submit{/*孫要素*/
     padding: 10px;
     width: 100%;
     height: 40px;
@@ -79,6 +101,10 @@
     font-weight: bold;
 }
 
+.todo-table__header-span {
+    margin-right: 40px;
+}
+
 .todo-table__item:first-of-type {/*孫要素*/
     padding: 12px;
     width: 90%;
@@ -91,7 +117,7 @@
 }
 
 .update-form__item {/*子要素*/
-    width: 80%;
+    width: 40%;
     line-height: 50%;
 }
 
@@ -99,6 +125,11 @@
     width: 100%;
     outline: none; /* フォーカス時の枠線を削除 */
     border: none;
+}
+
+.update-form__item-p {
+    text-align: left;
+    font-size: 13px;
 }
 
 
